@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="app">
     <div id="editor">
       <textarea v-model="input"></textarea>
     </div>
@@ -30,7 +30,7 @@ export default {
 <style>
 html,
 body,
-.home {
+#app {
   margin: 0;
   height: 100vh;
   width: 100%;
