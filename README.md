@@ -1,3 +1,8 @@
+# Markdown Editor
+
+
+## Product Backlog
+
 -   **User Story #1:**  I can see a  `textarea`element with a corresponding  `id="editor"`.
 -   **User Story #2:**  I can see an element with a corresponding  `id="preview"`.
 -   **User Story #3:**  When I enter text into the  `#editor`element, the  `#preview`element is updated as I type to display the content of the textarea.
@@ -7,6 +12,5 @@
 -   **Optional Bonus (you do not need to make this test pass):**  When I click a link rendered by my markdown previewer, the link is opened up in a new tab (HINT: read the Marked.js docs for this one!).
 -   **Optional Bonus (you do not need to make this test pass):**  My markdown previewer interprets carriage returns and renders them as  `br`(line break) elements.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDUyOTQ5NDIsLTIxMDI1NTk0NzhdfQ
-==
+eyJoaXN0b3J5IjpbLTY1NzUzOTgyNywtMjEwMjU1OTQ3OF19
 -->
