@@ -13,7 +13,8 @@
 -   **Optional Bonus (you do not need to make this test pass):**  My markdown previewer interprets carriage returns and renders them as  `br`(line break) elements.
 
 ## Mockup
-
+![enter image description here](https://i.imgur.com/dC6ZrOs.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNTQyMDU4OCwtMjEwMjU1OTQ3OF19
+eyJoaXN0b3J5IjpbLTEyMTE1OTk4NjksLTIxMDI1NTk0NzhdfQ
+==
 -->
