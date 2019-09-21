@@ -1,11 +1,26 @@
 <template>
   <div id="app">
-    <div id="editor">
-      <textarea v-model="input"></textarea>
-    </div>
-    <div id="preview">
-      <div v-html="compiledMarkdown"></div>
-    </div>
+    <section id="title">
+      <h1>Markdown Editor</h1>
+    </section>
+
+    <section id="header">
+      <div>
+        <h2>Markdown</h2>
+      </div>
+      <div id="header-preview">
+        <h2>Preview</h2>
+      </div>
+    </section>
+
+    <section id="editor">
+      <div id="input">
+        <textarea v-model="input"></textarea>
+      </div>
+      <div id="preview">
+        <div v-html="compiledMarkdown"></div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -28,33 +43,82 @@ export default {
 </script>
 
 <style>
-html,
-body,
-#app {
+#title {
+  background-color: #23cb84;
+  height: 70px;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+}
+
+#title h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
   margin: 0;
-  height: 100vh;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+#header #header-preview {
+  background-color: #f7f7f7;
+}
+
+#header {
   display: flex;
 }
 
-#editor,
+#header div {
+  width: 50%;
+  border-bottom: 1px solid #cecece;
+}
+
+#header h2 {
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#editor {
+  display: flex;
+  width: 100%;
+}
+
+#input,
 #preview {
-  height: 100%;
+  height: calc(100vh - 132px);
   width: 50%;
   vertical-align: top;
-  box-sizing: border-box;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-#editor textarea {
+#input textarea {
   font-family: 'Monaco', courier, monospace;
   font-size: 14px;
+  height: 100%;
   border: none;
   padding: 20px;
   outline: none;
-  height: 100%;
   box-sizing: border-box;
   resize: none;
   width: 100%;
@@ -63,10 +127,6 @@ body,
 #preview {
   padding: 0 20px;
   background-color: #f7f7f7;
-}
-
-#preview div {
-  height: 100%;
 }
 
 #preview img {
