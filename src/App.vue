@@ -55,6 +55,8 @@ body,
   padding: 20px;
   outline: none;
   height: 100%;
+  box-sizing: border-box;
+  resize: none;
   width: 100%;
 }
 
